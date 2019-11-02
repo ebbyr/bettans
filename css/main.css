@@ -320,7 +320,7 @@ nav ul li a:hover {
 }
 
 .ikoner {
-  float: right;
+  float: left;
   height: 2em;
   margin: 10px;
 }
@@ -344,7 +344,7 @@ nav ul li a:hover {
 }
 
 .box {
-  background-color: rgb(85, 75, 69);
+  background-color: #D1BAAC;;
   color: black;
   padding: 15px;
   font-size: 120%;
@@ -362,12 +362,10 @@ nav ul li a:hover {
 
 .main-area {
   grid-column: 1/4;
- /* grid-row: 3;*/
 }
 .sidfot {
   grid-column: 1 / 4;
-  /*grid-row: 4;*/
-  background-color: #D1BAAC;
+  background-color:  rgb(85, 75, 69);
 }
 
 .showcase {
@@ -382,19 +380,22 @@ nav ul li a:hover {
 }
 
 .katt {
-  border-style: solid;
-  border-width: 2px;
+  margin-top: 1em;
+  border-bottom: 0.1rem solid black;
+}
+
+.button {
+  margin-bottom: 2em;
 }
 
 #menu {
   display: none;
   width: 2em;
   grid-column: end;
-  background-color: none;
 }
 
 #menu:hover {
-  
+  background-color: rgba(85, 75, 69, 0.5);
 }
 
 #icon {
@@ -404,19 +405,17 @@ nav ul li a:hover {
 }
 
 #navmobile {
-  background-color: red;
-  color: BLUe;
-  height: 20em;
-  align-content: center;
-  width: 100%;
-  gap: 10px;
+  background-color: rgba(209, 186, 172, 0.5);
+  height: 8em;
+  text-align: initial;
+  width: 30em;
   display:none;
+  font-size: 1.5em;
+  padding: 1em;
 }
 
 .mobile {
-  margin-top: 20px;
-  color: blue;
-  background-color: antiquewhite;
+  margin-top: 30px;
   padding: 0;
 }
 
