@@ -365,7 +365,7 @@ nav ul li a:hover {
 }
 .sidfot {
   grid-column: 1 / 4;
-  background-color:  rgb(85, 75, 69);
+  background-color:  rgba(85, 75, 69,0.5);
 }
 
 .showcase {
