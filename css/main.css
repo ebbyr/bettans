@@ -432,6 +432,11 @@ nav ul li a:hover {
   margin-right: 0.2em;
 }
 
+.btn {
+  background: rgba(85, 75, 69, 0.5);
+  padding: 0.3em;
+  margin-bottom: 1em;
+}
 .active {
   background-color: rgba(85, 75, 69, 0.5);
 }
