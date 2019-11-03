@@ -1,52 +1,116 @@
-<!DOCTYPE html>
-<html>
-<title>W3.CSS</title>
+<!doctype html>
+<html class="no-js" lang="">
+
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="css/test.css">
-    <script src="js/plugins.js"></script>
-    <style>
-    .mySlides {display:none}
-    .w3-left, .w3-right, .w3-badge {cursor:pointer}
-    .w3-badge {height:13px;width:13px;padding:0}
-    </style>
+  <meta charset="utf-8">
+  <title></title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="icon.png">
+  <!-- Place favicon.ico in the root directory -->
+
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+  <meta name="theme-color" content="#fafafa">
 </head>
+
 <body>
+  <!--[if IE]>
+    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+  <![endif]-->
 
-<!-- Slideshow container -->
-<div class="slideshow-container">
+  <!-- Add your site or application content here -->
+  <script src="js/vendor/modernizr-3.7.1.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.4.1.min.js"><\/script>')</script>
+  <script src="js/plugins.js"></script>
+  <script src="js/main.js"></script>
 
-        <!-- Full-width images with number and caption text -->
-        <div class="mySlides fade">
-          <div class="numbertext">1 / 3</div>
-          <img src="img/berra.jpg" class="width100">
-          <div class="text">Caption Text</div>
-        </div>
+  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+  <script>
+    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+    ga('create', 'UA-XXXXX-Y', 'auto'); ga('set','transport','beacon'); ga('send', 'pageview')
+  </script>
+  <script src="https://www.google-analytics.com/analytics.js" async></script>
+
+  <div class="wrapper">
+    <header class="box header nav">
+      <a tabindex="0" id="logga" href="index.html"><img class="logo" src="img/logo.png" alt="logga"></a>
+      <nav class="navbar">
+        <ul>
+          <li><a tabindex="0" href="om-oss.html">Om oss</a></li>
+          <li><a tabindex="0" href="vara-katter.html">Våra katter</a></li>
+          <li><a tabindex="0" href="kontakt.html">Kontakt</a></li>
+          <li><a tabindex="0" href="blogg.html">Blogg</a></li>
+        </ul>
+      </nav>
+      <img src="img/menu.png" onclick="myFunction()" id="menu" alt="meny">
+
+      <script>
+        function myFunction() {
+          var x = document.getElementById("navmobile");
+          if (x.style.display === "none") {
+            x.style.display = "block";
+          } else {
+            x.style.display = "none";
+          }}
+      </script>
+
+
+
+      <section class="medier">
+        <a href="#"><img tabindex="0" class="ikoner" src="img/facebook.png"></a>
+        <a href="#"><img tabindex="0" class="ikoner" src="img/instagram.png"></a>
+      </section>
+    </header>
+
+    <section id="navmobile">
+      <nav>
+        <ul>
+          <li><a class="mobile" href="om-oss.html">Om oss</a></li> <br>
+          <li><a class="mobile" href="vara-katter.html">Våra katter</a></li><br>
+          <li><a class="mobile" href="kontakt.html">Kontakt</a></li><br>
+          <li><a class="mobile" href="blogg.html">Blogg</a></li><br>
+        </ul>
+      </nav>
+    </section>
+
+    <img class="showcase" src="img/cat.jpg" alt="Bild på katt">
+    <main class="box main-area nested">
+  
+      <article class="katt">
+        <img class="width100" src="img/pelle.jpeg">
+        <h3>Header</h3>
+        <button tabindex="0" class="btn">Läs mer</button>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores, inventore sit iste debitis rerum eveniet optio quam quisquam incidunt ad corporis illum quos soluta vero atque est animi autem voluptatum?</p>
+      </article>
       
-        <div class="mySlides fade">
-          <div class="numbertext">2 / 3</div>
-          <img src="img/cat.jpg" class="width100">
-          <div class="text">Caption Two</div>
-        </div>
+      <article class="katt">
+        <img class="width100" src="img/pelle.jpeg">
+        <h3>Header</h3>
+        <button tabindex="0" class="btn">Läs mer</button>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores, inventore sit iste debitis rerum eveniet optio quam quisquam incidunt ad corporis illum quos soluta vero atque est animi autem voluptatum?</p>
+      </article>
       
-        <div class="mySlides fade">
-          <div class="numbertext">3 / 3</div>
-          <img src="img/misse.jpg" class="width100">
-          <div class="text">Caption Three</div>
-        </div>
-      
-        <!-- Next and previous buttons -->
-        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-        <a class="next" onclick="plusSlides(1)">&#10095;</a>
-      </div>
-      <br>
-      
-      <!-- The dots/circles -->
-      <div style="text-align:center">
-        <span class="dot" onclick="currentSlide(1)"></span>
-        <span class="dot" onclick="currentSlide(2)"></span>
-        <span class="dot" onclick="currentSlide(3)"></span>
-      </div>
+      <article class="katt">
+        <img class="width100" src="img/pelle.jpeg">
+        <h3>Header</h3>
+        <button tabindex="0" class="btn">Läs mer</button>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores, inventore sit iste debitis rerum eveniet optio quam quisquam incidunt ad corporis illum quos soluta vero atque est animi autem voluptatum?</p>
+      </article>
+    </main>
+    
+    
+    <footer class="box sidfot">
+      © 2019 This is the footer
+    </footer>
+    
+  </div><!--End of site wrapper -->
 </body>
-<script src="js/main.js"></script>
-</html> 
+
+</html>

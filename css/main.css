@@ -316,18 +316,18 @@ nav ul li a:hover {
 #logga {
   margin-left: 0;
   grid-column: initial;
-  width: 10px;
+  width: 1em;
 }
 
 .ikoner {
   float: left;
   height: 2em;
-  margin: 10px;
+  margin: 0.5em;
 }
 .wrapper {
   display: grid;
-  grid-gap: 5px;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 0.5em;
+  grid-template-columns: repeat(auto-fit, minmax(17em, 1fr));
   color: black;
   max-width: 70em;
   margin: auto;
@@ -336,7 +336,7 @@ nav ul li a:hover {
 
 .nested {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(17em, 1fr));
   /*grid-auto-columns: minmax(400px, auto);*/
 }
 .nested > article{
@@ -346,7 +346,7 @@ nav ul li a:hover {
 .box {
   background-color: #D1BAAC;;
   color: black;
-  padding: 15px;
+  padding: 1em;
   font-size: 120%;
 }
 
@@ -382,8 +382,12 @@ nav ul li a:hover {
 .katt {
   margin-top: 1em;
   border-bottom: 0.1rem solid black;
+  object-fit: contain;
 }
 
+.mainarticle {
+  font-weight: 600;
+}
 .button {
   margin-bottom: 2em;
 }
@@ -406,7 +410,7 @@ nav ul li a:hover {
 
 #navmobile {
   background-color: rgba(209, 186, 172, 0.5);
-  height: 8em;
+  height: auto;
   text-align: initial;
   width: 30em;
   display:none;
@@ -415,8 +419,15 @@ nav ul li a:hover {
 }
 
 .mobile {
-  margin-top: 30px;
+  margin-top: 2em;
   padding: 0;
+}
+
+.mobilikoner {
+  margin-top: 0.4em;
+  height: 2em;
+  padding: 0;
+  margin-right: 0.2em;
 }
 
 /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
