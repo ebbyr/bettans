@@ -579,7 +579,7 @@ input, textarea {
 
 .om-oss {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(23em, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(17em, 1fr));
   background-color: rgba(209, 186, 172, 0.5);
   color: black;
   padding: 1em;
