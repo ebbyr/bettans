@@ -51,23 +51,11 @@
       </nav>
       <img src="img/menu.png" onclick="myFunction()" id="menu" alt="meny">
 
-      <script>
-        function myFunction() {
-          var x = document.getElementById("navmobile");
-          if (x.style.display === "none") {
-            x.style.display = "block";
-          } else {
-            x.style.display = "none";
-          }}
-      </script>
-
-
-
       <section class="medier">
         <a href="#"><img tabindex="0" class="ikoner" src="img/facebook.png"></a>
         <a href="#"><img tabindex="0" class="ikoner" src="img/instagram.png"></a>
       </section>
-    </header>
+      </header>
 
     <section id="navmobile">
       <nav>
@@ -81,35 +69,34 @@
         </ul>
       </nav>
     </section>
+    <main class="contact-main main-area nested">
+      <section class="contact">
+        <h1>Kontakta oss!</h1>
+        <h3>Har du några frågor, funderingar eller kanske är intresserad av en katt? Kontakta oss så hör vi av oss!</h3>
+        <form id="kontaktformulär">
 
-    <img class="showcase" src="img/cat.jpg" alt="Bild på katt">
-    <main class="box main-area nested">
-  
-      <article class="katt">
-        <img class="width100" src="img/article1.png" alt="bild av katt">
-        <h3 class="mainarticle">Pelle trivs!</h3>
-        <button tabindex="0" class="btn">Läs mer</button>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores, inventore sit iste debitis rerum eveniet optio quam quisquam incidunt ad corporis illum quos soluta vero atque est animi autem voluptatum?</p>
-      </article>
-      
-      <article class="katt">
-        <img class="width100" src="img/article2.jpg" alt="bild av katt">
-        <h3 class="mainarticle">Gretas nya matte</h3>
-        <button tabindex="0" class="btn">Läs mer</button>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores, inventore sit iste debitis rerum eveniet optio quam quisquam incidunt ad corporis illum quos soluta vero atque est animi autem voluptatum?</p>
-      </article>
-      
-      <article class="katt">
-        <img class="width100" src="img/article3.jpg" alt="bild av katt">
-        <h3 class="mainarticle">Sotis på upptäcksfärd</h3>
-        <button tabindex="0" class="btn">Läs mer</button>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores, inventore sit iste debitis rerum eveniet optio quam quisquam incidunt ad corporis illum quos soluta vero atque est animi autem voluptatum?</p>
-      </article>
+            <label for="förnamn">Förnamn</label>
+            <input type="text" id="förnamn">
+            
+            <label for="efternamn">Efternamn</label>
+            <input type="text" id="efternamn">
+           
+            <label for="email">E-postadress</label>
+            <input type="email" id="email">
+           
+            <label for="meddelande">Meddelande: </label>
+            <textarea id="meddelande"></textarea>
+            <input type="submit" name="Skicka" id="skickaBtn">
+
+        </form>
+      <p> Du kan också nå oss på <a href="#">Facebook</a> eller <a href="#">Instagram</a></p>
+      </section>
+      <img class="contact-img" src="img/kontakt.jpg">
     </main>
     
     
     <footer class="box sidfot">
-      © 2019 This is the footer
+      © 2019 Bettans katthem
     </footer>
     
   </div><!--End of site wrapper -->
