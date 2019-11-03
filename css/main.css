@@ -344,7 +344,7 @@ nav ul li a:hover {
 }
 
 .box {
-  background-color: #D1BAAC;;
+  background-color: #D1BAAC;
   color: black;
   padding: 1em;
   font-size: 120%;
@@ -430,6 +430,10 @@ nav ul li a:hover {
   margin-right: 0.2em;
 }
 
+.active {
+  background-color: rgba(85, 75, 69, 0.5);
+}
+
 /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
 @media screen and (max-width: 672px) {
 
@@ -453,4 +457,54 @@ nav ul li a:hover {
     .medier {
       display: none;
     }
+  }
+
+  .bloggwrapper {
+    max-width: 70em;
+    margin: auto;
+  }
+
+  .blogginl {
+    background-color: rgba(209, 186, 172, 0.5);
+    text-align: center;
+    margin-top: 0.5em;
+    padding: 1em;
+  }
+
+  .bloggbild {
+    margin-top: 1em;
+    width: 90%;
+    display: inline-block;
+  }
+
+  .date {
+    text-align: left;
+    margin-left: 3em;
+  }
+
+  .bloggpost {
+    text-align: left;
+    padding: 1em;
+  }
+
+  .vara-katter-img {
+    width: 100%;
+    height: 12em;
+    object-fit: contain;
+  }
+
+  .vara-katter {
+    text-align: left;
+    margin-left: 1em;
+  }
+
+  .vara-katter:hover {
+    background-color:  rgba(209, 186, 172, 0.3);
+  }
+
+  .vara-katter-main {
+    background-color: rgba(209, 186, 172, 0.5);
+    color: black;
+    padding: 1em;
+    font-size: 120%;
   }
