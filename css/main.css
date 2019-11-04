@@ -472,8 +472,11 @@ nav ul li a:hover {
   }
 
   .bloggwrapper {
+    grid-gap: 0.5em;
+    color: black;
     max-width: 70em;
     margin: auto;
+    text-align: center;
   }
 
   .blogginl {
