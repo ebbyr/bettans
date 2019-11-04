@@ -328,7 +328,7 @@ nav ul li a:hover {
 .wrapper {
   display: grid;
   grid-gap: 0.5em;
-  grid-template-columns: repeat(auto-fit, minmax(17em, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(14em, 1fr));
   color: black;
   max-width: 70em;
   margin: auto;
@@ -337,7 +337,7 @@ nav ul li a:hover {
 
 .nested {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(17em, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(14em, 1fr));
 }
 .nested > article{
   padding: 0.25em;
