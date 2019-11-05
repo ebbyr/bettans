@@ -400,10 +400,6 @@ nav ul li a:hover {
   grid-column: end;
 }
 
-#menu:hover {
-  background-color: rgba(85, 75, 69, 0.5);
-}
-
 #icon {
   height: 2em;
   float: left;
@@ -449,7 +445,6 @@ nav ul li a:hover {
   }
 
   .navbar {
-    width: 100%;
     margin: 0;
     display: none;
   }
