@@ -470,6 +470,7 @@ nav ul li a:hover {
 .bloggpost {
   text-align: left;
   padding: 1em;
+  margin-bottom: 1em;
 }
 
 /*Styling för sidan Våra Katter*/
